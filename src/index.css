@@ -1,11 +1,15 @@
-.BunkImage {
-  width: 65px;
-}
-
 .Header {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.HeaderText {
+  font-size: 50px;
+}
+
+.BunkImage {
+  width: 75px;
 }
