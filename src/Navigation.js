@@ -1,7 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navigation() {
-  return <h1>Navigation</h1>;
+  return (
+    <div className="Navigation">
+      <NavLink exact to="/">Home</NavLink>
+    </div>
+  );
 }
 
 export default Navigation;
