@@ -12,6 +12,14 @@ function Navigation() {
       >
         Home
       </NavLink>
+      <NavLink
+        exact
+        to="/gamesearch"
+        className="linkStyles"
+        activeClassName="activeLinkStyles"
+      >
+        Game Search
+      </NavLink>
     </div>
   );
 }
