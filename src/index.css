@@ -21,3 +21,17 @@
 .Navigation {
   text-align: center;
 }
+
+.linkStyles {
+  display: inline-block;
+  width: 50px;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+}
+
+.activeLinkStyles {
+  background-color: red;
+}
