@@ -1,7 +1,13 @@
 import React from "react";
 
 function Home() {
-  return <h1>Home</h1>
+  return (
+    <div className="Home">
+      <div className="appInformation">
+        <h1>Welcome to Bunk Game Sales</h1>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
