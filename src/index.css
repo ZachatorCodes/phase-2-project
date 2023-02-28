@@ -35,3 +35,19 @@
 .activeLinkStyles {
   background-color: red;
 }
+
+.GameSearch {
+  text-align: center;
+}
+
+.gameInput {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.mainSearch {
+  border: 1px black solid;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
