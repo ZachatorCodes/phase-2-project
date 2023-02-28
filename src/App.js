@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="gamesearch">
+        <Route exact path="/gamesearch">
           <GameSearch />
         </Route>
       </Switch>
