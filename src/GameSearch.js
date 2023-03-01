@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
-function GameSearch() {
-  const [search, setSearch] = useState("");
-
+function GameSearch({ search, setSearch, setGames }) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("SUBMITTED:", search);
     setSearch("");
     fetch(`https://www.cheapshark.com/api/1.0/games?title=${search}`)
       .then((r) => r.json())
-      .then((games) => {
-        console.log(games);
+      .then((data) => {
+        console.log(data);
+        setGames(data);
       });
   }
 
