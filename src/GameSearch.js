@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function GameSearch({ search, setSearch, setGames }) {
   function handleSubmit(event) {
