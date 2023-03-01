@@ -6,6 +6,7 @@ function GameSearch() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("SUBMITTED:", search);
+    setSearch("");
     fetch(`https://www.cheapshark.com/api/1.0/games?title=${search}`)
       .then((r) => r.json())
       .then((games) => {
