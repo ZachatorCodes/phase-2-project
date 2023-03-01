@@ -15,7 +15,7 @@ function GameSearch({ search, setSearch, setGames }) {
 
   return (
     <div className="GameSearch">
-      <h1>Game Search</h1>
+      <h1 className="searchTitle">Game Search</h1>
       <div className="mainSearch">
         <h3>Please search for a game below.</h3>
         <div className="searchForm">

@@ -48,7 +48,7 @@
 .mainSearch {
   border: 1px black solid;
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
@@ -63,4 +63,8 @@
   grid-gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: min-content;
+}
+
+.searchTitle {
+  margin-bottom: 8px;
 }
