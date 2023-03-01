@@ -1,16 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function GameSearch() {
   const [search, setSearch] = useState("");
 
-  function handleSearchChange(e) {
-    console.log(e.target.value)
-    setSearch(e.target.value);
-  }
-
-  function handleSubmit(e) {
-    e.preventDefaut();
-    console.log(search);
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log("SUBMITTED:", search);
+    fetch(`https://www.cheapshark.com/api/1.0/games?title=${search}`)
+      .then((r) => r.json())
+      .then((games) => {
+        console.log(games);
+      });
   }
 
   return (
@@ -19,15 +19,15 @@ function GameSearch() {
       <div className="mainSearch">
         <h3>Please search for a game below.</h3>
         <div className="searchForm">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               className="gameInput"
               placeholder="Enter Name Here"
-              onChange={handleSearchChange}
+              onChange={(e) => setSearch(e.target.value)}
               value={search}
             ></input>
-            <input type="submit" value="Submit" onSubmit={handleSubmit}></input>
+            <input type="submit"></input>
           </form>
         </div>
       </div>
