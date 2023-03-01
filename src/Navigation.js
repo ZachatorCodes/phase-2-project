@@ -14,7 +14,7 @@ function Navigation() {
       </NavLink>
       <NavLink
         exact
-        to="/gamesearch"
+        to="/search"
         className="linkStyles"
         activeClassName="activeLinkStyles"
       >

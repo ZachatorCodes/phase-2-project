@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Navigation from "./Navigation";
-import GameSearch from "./GameSearch";
+import GameContainer from "./GameContainer";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/gamesearch">
-          <GameSearch />
+        <Route exact path="/search">
+          <GameContainer />
         </Route>
       </Switch>
     </div>
