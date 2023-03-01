@@ -27,7 +27,7 @@ function GameSearch({ search, setSearch, setGames }) {
               onChange={(e) => setSearch(e.target.value)}
               value={search}
             ></input>
-            <input type="submit"></input>
+            <input type="submit" value="Submit"></input>
           </form>
         </div>
       </div>
