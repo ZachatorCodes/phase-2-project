@@ -53,8 +53,12 @@
 }
 
 .GameCard {
-  border: 1px black solid;
+  border: solid black;
+  border-radius: 25px;
   text-align: center;
+  word-break: break-word;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .GameStorage {
