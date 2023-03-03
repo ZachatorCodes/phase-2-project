@@ -1,6 +1,6 @@
 import React from "react";
 
-function StoreFilter() {
+function StoreFilter({ activeFilter, setActiveFilter, sort, setSort }) {
   return (
     <div className="StoreFilter">
       <h1>Store Filter</h1>
