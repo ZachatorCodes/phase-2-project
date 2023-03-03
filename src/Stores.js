@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import StoreContainer from "./StoreContainer";
 import StoreFilter from "./StoreFilter";
 
 function Store() {
@@ -24,9 +25,6 @@ function Store() {
         return store1.storeName.localeCompare(store2.storeName);
       })
     : filteredStores;
-  // store.isActive
-  // 1 === active
-  // 0 === not active
 
   return (
     <div className="Stores">
@@ -37,6 +35,7 @@ function Store() {
         sort={sort}
         setSort={setSort}
       />
+      <StoreContainer stores={storesToDisplay} />
     </div>
   );
 }
