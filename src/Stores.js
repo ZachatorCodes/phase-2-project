@@ -11,7 +11,6 @@ function Store() {
     fetch("https://www.cheapshark.com/api/1.0/stores")
       .then((r) => r.json())
       .then((data) => {
-        console.log(data);
         setStores(data);
       });
   }, []);
