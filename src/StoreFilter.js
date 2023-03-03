@@ -11,7 +11,6 @@ function StoreFilter({ activeFilter, setActiveFilter, sort, setSort }) {
 
   return (
     <div className="StoreFilter">
-      <h1>Store Filter</h1>
       <form>
         <label htmlFor="sort">
           Sort Alphabetically
