@@ -15,6 +15,19 @@ function Store() {
       });
   }, []);
 
+  const filteredStores = stores.filter((store) =>
+    activeFilter ? store.isActive === 1 : true
+  );
+
+  const storesToDisplay = sort
+    ? filteredStores.sort((store1, store2) => {
+        return store1.storeName.localeCompare(store2.storeName);
+      })
+    : filteredStores;
+  // store.isActive
+  // 1 === active
+  // 0 === not active
+
   return (
     <div className="Stores">
       <h1>Stores</h1>
