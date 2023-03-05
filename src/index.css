@@ -98,7 +98,7 @@
   max-width: 150px;
 } 
 
-#Container {
+.Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
