@@ -3,10 +3,12 @@ import BuildGame from "./BuildGame";
 
 function Games({ games }) {
   return (
-    <div className="GameStorage">
-      {games.map((game, index) => {
-        return <BuildGame game={game} key={index} />;
-      })}
+    <div id="Container">
+      <div className="GameStorage">
+        {games.map((game, index) => {
+          return <BuildGame game={game} key={index} />;
+        })}
+      </div>
     </div>
   );
 }
