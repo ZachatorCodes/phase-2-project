@@ -96,4 +96,9 @@
 
 .StoreImage {
   max-width: 150px;
+} 
+
+#Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
