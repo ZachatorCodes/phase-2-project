@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function GameDeal({ gameID }) {
   useEffect(() => {
@@ -12,7 +12,7 @@ function GameDeal({ gameID }) {
   }, [gameID]);
 
   return (
-    <div>
+    <div className="GameDeal">
       <h1>{gameID}</h1>
     </div>
   );
