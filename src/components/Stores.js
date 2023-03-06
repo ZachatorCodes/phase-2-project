@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import StoreContainer from "./StoreContainer";
 import StoreFilter from "./StoreFilter";
 
-function Store() {
-  const [stores, setStores] = useState([]);
+function Store({ stores, setStores }) {
   const [activeFilter, setActiveFilter] = useState(false);
   const [sort, setSort] = useState(false);
 

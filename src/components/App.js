@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Navigation from "./Navigation";
@@ -7,6 +7,7 @@ import Store from "./Stores";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
+  const [stores, setStores] = useState([]);
   return (
     <div className="App">
       <Header />
@@ -19,7 +20,7 @@ function App() {
           <GameContainer />
         </Route>
         <Route exact path="/stores">
-          <Store />
+          <Store stores={stores} setStores={setStores} />
         </Route>
       </Switch>
     </div>
