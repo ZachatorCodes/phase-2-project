@@ -65,8 +65,13 @@
   display: grid;
   padding: 12px;
   grid-gap: 12px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: min-content;
+}
+
+.GameCard img {
+  width: 150px;
+  height: auto;
 }
 
 .searchTitle {
