@@ -1,5 +1,5 @@
 import React from "react";
-import bunkface from "./bunkface.png";
+import bunkface from "/home/zachator/Development/code/phase-2/phase-2-project/src/bunkface.png";
 
 function Header() {
   return (
