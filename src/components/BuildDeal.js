@@ -3,7 +3,7 @@ import React from "react";
 function BuildDeal({ deal, stores }) {
   return (
     <div className="Deal">
-      <h1>Deal</h1>
+      <h3>Deal</h3>
     </div>
   );
 }
