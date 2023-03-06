@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Navigation from "./Navigation";
@@ -8,6 +8,15 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   const [stores, setStores] = useState([]);
+
+  useEffect(() => {
+    fetch("https://www.cheapshark.com/api/1.0/stores")
+      .then((r) => r.json())
+      .then((data) => {
+        setStores(data);
+      });
+  }, []);
+
   return (
     <div className="App">
       <Header />

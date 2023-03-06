@@ -6,14 +6,6 @@ function Store({ stores, setStores }) {
   const [activeFilter, setActiveFilter] = useState(false);
   const [sort, setSort] = useState(false);
 
-  useEffect(() => {
-    fetch("https://www.cheapshark.com/api/1.0/stores")
-      .then((r) => r.json())
-      .then((data) => {
-        setStores(data);
-      });
-  }, []);
-
   const filteredStores = stores.filter((store) =>
     activeFilter ? store.isActive === 1 : true
   );
