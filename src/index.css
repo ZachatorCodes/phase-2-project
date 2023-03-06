@@ -74,6 +74,10 @@
   height: auto;
 }
 
+.GameCard button {
+  margin-bottom: 15px;
+}
+
 .searchTitle {
   margin-bottom: 8px;
 }
@@ -106,4 +110,17 @@
 .Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.GameDeal {
+  text-align: center;
+}
+
+.GameDeal h1 {
+  font-size: 60px;
+  margin-bottom: 3px;
+}
+
+.GameDeal h3 {
+  margin-top: 3px;
 }
