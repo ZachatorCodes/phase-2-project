@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import BuildGame from "./BuildGame";
 import GameDeal from "./GameDeal";
 
-function Games({ games }) {
+function Games({ games, stores }) {
   const [gameDeal, setGameDeal] = useState(null);
 
   return (
@@ -13,7 +13,7 @@ function Games({ games }) {
         })}
       </div>
       <div className="DealStorage">
-        <GameDeal gameID={gameDeal}/>
+        <GameDeal gameID={gameDeal} stores={stores}/>
       </div>
     </div>
   );

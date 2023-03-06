@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BuildDeal from "./BuildDeal";
 
-function GameDeal({ gameID }) {
+function GameDeal({ gameID, stores }) {
   const [cheapestPrice, setCheapestPrice] = useState(null);
   const [info, setInfo] = useState(null);
   const [deals, setDeals] = useState(null);
@@ -34,7 +34,7 @@ function GameDeal({ gameID }) {
       <div className="Deals">
         {deals !== null
           ? deals.map((deal, index) => {
-              return <BuildDeal deal={deal} key={index} />;
+              return <BuildDeal deal={deal} key={index} stores={stores} />;
             })
           : null}
       </div>

@@ -26,7 +26,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/search">
-          <GameContainer />
+          <GameContainer stores={stores} />
         </Route>
         <Route exact path="/stores">
           <Store stores={stores} setStores={setStores} />
