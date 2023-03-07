@@ -5,13 +5,17 @@ function BuildDeal({ deal, stores }) {
     return store.storeID === deal.storeID;
   });
   console.log(dealStore);
-  if (dealStore.isActive === 1) { 
-    return (
-      <div className="Deal" id={deal.dealID}>
-        <h3>{dealStore.storeName}</h3>
-        <img src={`https://www.cheapshark.com/${dealStore.images.logo}`} className="StoreImage"></img>
-      </div>
-    );
+  if (dealStore.isActive === 1) {
+    if (parseFloat(deal.savings) !== 0) {
+      return (
+        <div className="Deal" id={deal.dealID}>
+          <h3>{dealStore.storeName}</h3>
+          <img src={`https://www.cheapshark.com/${dealStore.images.logo}`} className="StoreImage"></img>
+          <p>Regular Price: ${deal.retailPrice}</p>
+          <p>Sale Price: ${deal.price}</p>
+        </div>
+      );
+    } 
   }
 }
 
