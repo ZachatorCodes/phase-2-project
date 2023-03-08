@@ -17,8 +17,6 @@ function StoreDeals({ storeID }) {
 
   return (
     <div className="StoreDeals">
-      <h1>StoreDeals</h1>
-      <h1>{storeID}</h1>
       <div className="Deals">
         {listOfDeals !== null
           ? listOfDeals.map((deal, index) => {
