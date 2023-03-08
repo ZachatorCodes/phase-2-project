@@ -27,9 +27,8 @@ function Store({ stores, setStores }) {
         setSort={setSort}
       />
       <div className="Container">
-        <StoreContainer stores={storesToDisplay} setDealStore={setStore}/>
+        <StoreContainer stores={storesToDisplay} setDealStore={setStore} />
       </div>
-      
     </div>
   );
 }
