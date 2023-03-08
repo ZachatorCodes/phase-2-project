@@ -1,6 +1,9 @@
 import React from "react";
 
 function BuildStoreDeal({ deal }) {
+  function visitDeal() {
+    window.open(`https://www.cheapshark.com/redirect?dealID=${deal.dealID}`, "_blank");
+  }
   return (
     <div className="BuildStoreDeal">
       <div className="Deal">
@@ -14,6 +17,7 @@ function BuildStoreDeal({ deal }) {
             2
           )}
         </p>
+        <button onClick={visitDeal}>Visit Deal</button>
       </div>
     </div>
   );
