@@ -13,6 +13,7 @@ function BuildDeal({ deal, stores }) {
           <img src={`https://www.cheapshark.com/${dealStore.images.logo}`} className="StoreImage"></img>
           <p>Regular Price: ${deal.retailPrice}</p>
           <p>Sale Price: ${deal.price}</p>
+          <p>Discount: ${(parseFloat(deal.retailPrice) - parseFloat(deal.price)).toFixed(2)}</p>
         </div>
       );
     } 
