@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import StoreContainer from "./StoreContainer";
+import StoreDeals from "./StoreDeals";
 import StoreFilter from "./StoreFilter";
 
 function Store({ stores, setStores }) {
@@ -28,6 +29,7 @@ function Store({ stores, setStores }) {
       />
       <div className="Container">
         <StoreContainer stores={storesToDisplay} setDealStore={setStore} />
+        <StoreDeals storeID={store}/>
       </div>
     </div>
   );
