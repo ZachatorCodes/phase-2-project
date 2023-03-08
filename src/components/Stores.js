@@ -5,6 +5,7 @@ import StoreFilter from "./StoreFilter";
 function Store({ stores, setStores }) {
   const [activeFilter, setActiveFilter] = useState(false);
   const [sort, setSort] = useState(false);
+  const [store, setStore] = useState(null);
 
   const filteredStores = stores.filter((store) =>
     activeFilter ? store.isActive === 1 : true
@@ -25,7 +26,10 @@ function Store({ stores, setStores }) {
         sort={sort}
         setSort={setSort}
       />
-      <StoreContainer stores={storesToDisplay} />
+      <div className="Container">
+        <StoreContainer stores={storesToDisplay} setDealStore={setStore}/>
+      </div>
+      
     </div>
   );
 }
