@@ -28,6 +28,14 @@ function Navigation() {
       >
         Stores
       </NavLink>
+      <NavLink
+        exact
+        to="/wishlist"
+        className="linkStyles"
+        activeClassName="activeLinkStyles"
+      >
+        Wishlist
+      </NavLink>
     </div>
   );
 }
