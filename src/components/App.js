@@ -4,6 +4,7 @@ import Home from "./Home";
 import Navigation from "./Navigation";
 import GameContainer from "./GameContainer";
 import Store from "./Stores";
+import Wishlist from "./Wishlist";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route exact path="/stores">
           <Store stores={stores} setStores={setStores} />
+        </Route>
+        <Route exact path="/wishlist">
+          <Wishlist />
         </Route>
       </Switch>
     </div>
