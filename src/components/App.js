@@ -31,7 +31,7 @@ function App() {
           <Store stores={stores} setStores={setStores} />
         </Route>
         <Route exact path="/wishlist">
-          <Wishlist wishlist={wishlist}/>
+          <Wishlist wishlist={wishlist} setWishlist={setWishlist}/>
         </Route>
         <Route exact path="/">
           <Home />
