@@ -9,6 +9,7 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   const [stores, setStores] = useState([]);
+  const [wishlist, setWishlist] = useState([]);
 
   useEffect(() => {
     fetch("https://www.cheapshark.com/api/1.0/stores")
@@ -23,9 +24,6 @@ function App() {
       <Header />
       <Navigation />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
         <Route exact path="/search">
           <GameContainer stores={stores} />
         </Route>
@@ -33,7 +31,10 @@ function App() {
           <Store stores={stores} setStores={setStores} />
         </Route>
         <Route exact path="/wishlist">
-          <Wishlist />
+          <Wishlist wishlist={wishlist}/>
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
     </div>
