@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import BuildGame from "./BuildGame";
 import GameDeal from "./GameDeal";
 
@@ -8,12 +8,12 @@ function Games({ games, stores }) {
   return (
     <div className="Container">
       <div className="GameStorage">
-        {games.map((game, index) => {
-          return <BuildGame game={game} key={index} setGameDeal={setGameDeal}/>;
-        })}
+        {games.map((game, index) => (
+          <BuildGame game={game} key={index} setGameDeal={setGameDeal} />
+        ))}
       </div>
       <div className="DealStorage">
-        <GameDeal gameID={gameDeal} stores={stores}/>
+        <GameDeal gameID={gameDeal} stores={stores} />
       </div>
     </div>
   );
