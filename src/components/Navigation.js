@@ -36,6 +36,14 @@ function Navigation() {
       >
         Wishlist
       </NavLink>
+      <NavLink
+        exact
+        to="/form"
+        className="linkStyles"
+        activeClassName="activeLinkStyles"
+      >
+        Form
+      </NavLink>
     </div>
   );
 }
