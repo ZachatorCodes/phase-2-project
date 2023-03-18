@@ -19,6 +19,7 @@ function BuildDeal({ deal, stores }) {
           <img
             src={`https://www.cheapshark.com/${dealStore.images.logo}`}
             className="StoreImage"
+            alt={`Deal from ${dealStore.storeName}`}
           ></img>
           <p>Regular Price: ${deal.retailPrice}</p>
           <p>Sale Price: ${deal.price}</p>
