@@ -6,7 +6,10 @@ function BuildDeal({ deal, stores }) {
   });
 
   function visitDeal() {
-    window.open(`https://www.cheapshark.com/redirect?dealID=${deal.dealID}`, "_blank");
+    window.open(
+      `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`,
+      "_blank"
+    );
   }
 
   console.log(dealStore);

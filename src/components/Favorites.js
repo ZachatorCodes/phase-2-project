@@ -22,11 +22,13 @@ function Favorites() {
     <div className="Favorites">
       <h1>Favorite Games</h1>
       <div>
-        <Form onAddGame={handleAddGame}/>
+        <Form onAddGame={handleAddGame} />
       </div>
       <div className="Deals">
         {favorites.map((game, index) => {
-          return <BuildFavorite name={game.title} image={game.image} key={index}/>;
+          return (
+            <BuildFavorite name={game.title} image={game.image} key={index} />
+          );
         })}
       </div>
     </div>

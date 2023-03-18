@@ -7,9 +7,7 @@ function Store({ stores }) {
   const [sort, setSort] = useState(false);
   const [store, setStore] = useState(null);
 
-  const filteredStores = stores.filter((store) =>
-    store.isActive === 1
-  );
+  const filteredStores = stores.filter((store) => store.isActive === 1);
 
   const storesToDisplay = sort
     ? filteredStores.sort((store1, store2) => {
@@ -20,13 +18,10 @@ function Store({ stores }) {
   return (
     <div className="Stores">
       <h1>Stores</h1>
-      <StoreFilter
-        sort={sort}
-        setSort={setSort}
-      />
+      <StoreFilter sort={sort} setSort={setSort} />
       <div className="Container">
         <StoreContainer stores={storesToDisplay} setDealStore={setStore} />
-        <StoreDeals storeID={store} stores={stores}/>
+        <StoreDeals storeID={store} stores={stores} />
       </div>
     </div>
   );

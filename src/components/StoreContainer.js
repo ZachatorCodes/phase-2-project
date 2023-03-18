@@ -5,7 +5,9 @@ function StoreContainer({ stores, setDealStore }) {
   return (
     <div className="StoreContainer">
       {stores.map((store, index) => {
-        return <BuildStore store={store} key={index} setDealStore={setDealStore}/>;
+        return (
+          <BuildStore store={store} key={index} setDealStore={setDealStore} />
+        );
       })}
     </div>
   );

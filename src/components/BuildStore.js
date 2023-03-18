@@ -10,6 +10,7 @@ function BuildStore({ store, setDealStore }) {
       <img
         className="StoreImage"
         src={`https://www.cheapshark.com/${store.images.logo}`}
+        alt={store.storeName}
       ></img>
       <button onClick={handleStoreChange}>See Deals</button>
     </div>

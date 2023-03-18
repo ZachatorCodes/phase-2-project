@@ -13,7 +13,7 @@ function BuildStoreDeal({ deal }) {
       <div className="BuildStoreDeal">
         <div className="Deal">
           <h1>{deal.title}</h1>
-          <img src={deal.thumb}></img>
+          <img src={deal.thumb} alt={deal.title}></img>
           <p>Regular Price: ${deal.normalPrice}</p>
           <p>Sale Price: ${deal.salePrice}</p>
           <p>
