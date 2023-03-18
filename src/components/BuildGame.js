@@ -8,7 +8,7 @@ function BuildGame({ game, setGameDeal }) {
   return (
     <div className="GameCard" id={game.gameID}>
       <h2>{game.external}</h2>
-      <img src={game.thumb} width="200px" height="75px"></img>
+      <img src={game.thumb} width="200px" height="75px" alt={game.external}></img>
       <p>Cheapest Price Available - ${game.cheapest}</p>
       <button onClick={handleGameClick}>See Deals</button>
     </div>
