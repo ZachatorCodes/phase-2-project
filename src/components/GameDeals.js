@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BuildDeal from "./BuildDeal";
 
-function GameDeal({ gameID, stores }) {
+function GameDeals({ gameID, stores }) {
   const [cheapestPrice, setCheapestPrice] = useState(null);
   const [info, setInfo] = useState(null);
   const [deals, setDeals] = useState(null);
@@ -20,7 +20,7 @@ function GameDeal({ gameID, stores }) {
   }, [gameID]);
 
   return (
-    <div className="GameDeal">
+    <div className="GameDeals">
       <div className="GameDealInfo">
         {info !== null ? (
           <div>
@@ -42,4 +42,4 @@ function GameDeal({ gameID, stores }) {
   );
 }
 
-export default GameDeal;
+export default GameDeals;

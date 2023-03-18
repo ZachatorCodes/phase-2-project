@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BuildGame from "./BuildGame";
-import GameDeal from "./GameDeal";
+import GameDeals from "./GameDeals";
 
 function Games({ games, stores }) {
   const [gameDeal, setGameDeal] = useState(null);
@@ -13,7 +13,7 @@ function Games({ games, stores }) {
         ))}
       </div>
       <div className="DealStorage">
-        <GameDeal gameID={gameDeal} stores={stores} />
+        <GameDeals gameID={gameDeal} stores={stores} />
       </div>
     </div>
   );

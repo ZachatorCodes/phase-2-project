@@ -117,16 +117,16 @@
   grid-gap: 15px;
 }
 
-.GameDeal {
+.GameDeals {
   text-align: center;
 }
 
-.GameDeal h1 {
+.GameDeals h1 {
   font-size: 60px;
   margin-bottom: 3px;
 }
 
-.GameDeal h3 {
+.GameDeals h3 {
   margin-top: 3px;
 }
 
