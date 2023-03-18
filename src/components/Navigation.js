@@ -30,11 +30,11 @@ function Navigation() {
       </NavLink>
       <NavLink
         exact
-        to="/wishlist"
+        to="/favorites"
         className="linkStyles"
         activeClassName="activeLinkStyles"
       >
-        Wishlist
+        Favorites
       </NavLink>
       <NavLink
         exact
