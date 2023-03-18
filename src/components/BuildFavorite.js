@@ -1,6 +1,6 @@
 import React from "react";
 
-function BuildWishlistApp({ name, image }) {
+function BuildFavorite({ name, image }) {
   return (
     <div className="Deal">
       <h1>{name}</h1>
@@ -9,4 +9,4 @@ function BuildWishlistApp({ name, image }) {
   );
 }
 
-export default BuildWishlistApp;
+export default BuildFavorite;

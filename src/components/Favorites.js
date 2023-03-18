@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import BuildWishlistApp from "./BuildWishlistApp";
+import BuildFavorite from "./BuildFavorite";
 
-function Wishlist({ wishlist }) {
+function Favorites({ favorites }) {
   const [wishlistToDisplay, setWishlistToDisplay] = useState([]);
   useEffect(() => {
     fetch("http://localhost:4000/games")
@@ -9,18 +9,18 @@ function Wishlist({ wishlist }) {
       .then((data) => {
         setWishlistToDisplay(data);
       });
-  }, [wishlist]);
+  }, [favorites]);
 
   return (
     <div className="Wishlist">
-      <h1>Wishlist</h1>
+      <h1>Favorite</h1>
       <div className="Deals">
         {wishlistToDisplay.map((game, index) => {
-          return <BuildWishlistApp game={game} key={index}/>;
+          return <BuildFavorite name={game.title} image={game.image} key={index}/>;
         })}
       </div>
     </div>
   );
 }
 
-export default Wishlist;
+export default Favorites;
