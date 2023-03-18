@@ -34,9 +34,6 @@ function App() {
         <Route exact path="/favorites">
           <Favorites favorites={favorites} />
         </Route>
-        <Route exact path="/form">
-          <Form />
-        </Route>
         <Route exact path="/">
           <Home />
         </Route>

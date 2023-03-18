@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import BuildFavorite from "./BuildFavorite";
+import Form from "./Form";
 
 function Favorites({ favorites }) {
   const [wishlistToDisplay, setWishlistToDisplay] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:4000/games")
       .then((r) => r.json())
@@ -12,8 +14,11 @@ function Favorites({ favorites }) {
   }, [favorites]);
 
   return (
-    <div className="Wishlist">
+    <div className="Favorites">
       <h1>Favorite</h1>
+      <div>
+        <Form />
+      </div>
       <div className="Deals">
         {wishlistToDisplay.map((game, index) => {
           return <BuildFavorite name={game.title} image={game.image} key={index}/>;
