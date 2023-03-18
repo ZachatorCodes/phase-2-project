@@ -2,25 +2,30 @@ import React, { useEffect, useState } from "react";
 import BuildFavorite from "./BuildFavorite";
 import Form from "./Form";
 
-function Favorites({ favorites }) {
-  const [wishlistToDisplay, setWishlistToDisplay] = useState([]);
+function Favorites() {
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:4000/games")
       .then((r) => r.json())
       .then((data) => {
-        setWishlistToDisplay(data);
+        setFavorites(data);
       });
-  }, [favorites]);
+  }, []);
+
+  function handleAddGame(newGame) {
+    const updatedFavs = [...favorites, newGame];
+    setFavorites(updatedFavs);
+  }
 
   return (
     <div className="Favorites">
-      <h1>Favorite</h1>
+      <h1>Favorite Games</h1>
       <div>
-        <Form />
+        <Form onAddGame={handleAddGame}/>
       </div>
       <div className="Deals">
-        {wishlistToDisplay.map((game, index) => {
+        {favorites.map((game, index) => {
           return <BuildFavorite name={game.title} image={game.image} key={index}/>;
         })}
       </div>
