@@ -11,7 +11,6 @@ function BuildStore({ store, setDealStore }) {
         className="StoreImage"
         src={`https://www.cheapshark.com/${store.images.logo}`}
       ></img>
-      <p>{store.isActive === 1 ? "ACTIVE" : "NOT ACTIVE"}</p>
       <button onClick={handleStoreChange}>See Deals</button>
     </div>
   );
