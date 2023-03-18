@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import GameContainer from "./GameContainer";
 import Store from "./Stores";
 import Wishlist from "./Wishlist";
+import Form from "./Form";
 import { Route, Switch } from "react-router-dom";
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route exact path="/wishlist">
           <Wishlist wishlist={wishlist} />
+        </Route>
+        <Route exact path="/form">
+          <Form />
         </Route>
         <Route exact path="/">
           <Home />
