@@ -25,13 +25,13 @@ function App() {
       <Navigation />
       <Switch>
         <Route exact path="/search">
-          <GameContainer stores={stores} />
+          <GameContainer stores={stores} setWishlist={setWishlist}/>
         </Route>
         <Route exact path="/stores">
           <Store stores={stores} setStores={setStores} />
         </Route>
         <Route exact path="/wishlist">
-          <Wishlist wishlist={wishlist} setWishlist={setWishlist}/>
+          <Wishlist wishlist={wishlist} />
         </Route>
         <Route exact path="/">
           <Home />
