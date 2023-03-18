@@ -3,13 +3,13 @@ import StoreContainer from "./StoreContainer";
 import StoreDeals from "./StoreDeals";
 import StoreFilter from "./StoreFilter";
 
-function Store({ stores, setStores }) {
+function Store({ stores }) {
   const [activeFilter, setActiveFilter] = useState(false);
   const [sort, setSort] = useState(false);
   const [store, setStore] = useState(null);
 
   const filteredStores = stores.filter((store) =>
-    activeFilter ? store.isActive === 1 : true
+    store.isActive === 1
   );
 
   const storesToDisplay = sort
@@ -29,7 +29,7 @@ function Store({ stores, setStores }) {
       />
       <div className="Container">
         <StoreContainer stores={storesToDisplay} setDealStore={setStore} />
-        <StoreDeals storeID={store}/>
+        <StoreDeals storeID={store} stores={stores}/>
       </div>
     </div>
   );
