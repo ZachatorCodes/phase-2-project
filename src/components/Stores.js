@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import StoreContainer from "./StoreContainer";
 import StoreDeals from "./StoreDeals";
 import StoreFilter from "./StoreFilter";
 
 function Store({ stores }) {
-  const [activeFilter, setActiveFilter] = useState(false);
   const [sort, setSort] = useState(false);
   const [store, setStore] = useState(null);
 
@@ -22,8 +21,6 @@ function Store({ stores }) {
     <div className="Stores">
       <h1>Stores</h1>
       <StoreFilter
-        activeFilter={activeFilter}
-        setActiveFilter={setActiveFilter}
         sort={sort}
         setSort={setSort}
       />
