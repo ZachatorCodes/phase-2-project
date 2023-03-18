@@ -9,7 +9,6 @@ function StoreDeals({ storeID }) {
       fetch(`https://www.cheapshark.com/api/1.0/deals?storeID=${storeID}`)
         .then((r) => r.json())
         .then((data) => {
-          console.log(data);
           setListOfDeals(data);
         });
     }
