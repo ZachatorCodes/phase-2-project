@@ -32,6 +32,14 @@ To make sure that the Favorites page of the application works, you must fork and
 
 ![](readme-ss-3.png)
 
+- If you'd like to sort the stores by alphabetical order, you can do so by checking the "Sort Alphabetically" box at the top of the page.
+
+- To see deals from a specific store, click the "See Dealss" button at the bottom of a specific store card.
+
+- When clicked, the 60 most popular deals for the selected marketplace will be shown on the right side of the screen. If there are no deals visible, it means that the selected store has no deals active.
+
+![](readme-ss-4.png)
+
 ## API
 
 This application was created using the [CheapShark Deals API](https://apidocs.cheapshark.com/). As requested by the API creator, all redirects to specific deals are done so through CheapShark's specific redirect URL. Many thanks to CheapShark for creating such a helpful API!
