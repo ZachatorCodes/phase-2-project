@@ -6,9 +6,11 @@ Additionally, the application can also be used to find all deals for a given onl
 
 ## Installation
 
-In order to install the application, please fork and clone this repository to your local device.
+In order to install the application, please ```fork``` and ```clone``` this repository to your local device.
 
 In order to start the application, please make sure you are in the project directory, then run ```npm start```.
+
+If an error is encountered running ```npm start```, please run ```npm install``` to install the required dependencies, then try running ```npm start``` once more.
 
 ## Usage
 
