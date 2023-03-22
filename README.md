@@ -12,11 +12,13 @@ In order to start the application, please make sure you are in the project direc
 
 If an error is encountered running ```npm start```, please run ```npm install``` to install the required dependencies, then try running ```npm start``` once more.
 
-To make sure that the Favorites page of the application works, you must fork and clone the [database repository](https://github.com/ZachatorCodes/phase-2-project-server), and then start a json-server with the ```db.json``` file. Further instructions for installing the database can be found in the README file in the [database repository](https://github.com/ZachatorCodes/phase-2-project-server).
+To make sure that the Favorites page of the application works, you must fork and clone the [database repository](https://github.com/ZachatorCodes/phase-2-project-server), and then start a json-server with the ```db.json``` file. Further instructions for installing the database can be found in the README file of the [database repository](https://github.com/ZachatorCodes/phase-2-project-server).
 
 ## Usage
 
+- To use Bunk Sales, please make sure the application is open and running. To search for a specific game, please click on the "Game Search" tab of the navigation bar.
 
+![](readme-ss-1.png)
 
 ## API
 
