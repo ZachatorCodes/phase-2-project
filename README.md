@@ -20,6 +20,14 @@ To make sure that the Favorites page of the application works, you must fork and
 
 ![](readme-ss-1.png)
 
+- Once you are on the "Game Search" page, to search for a game, enter a game name into the search bar visible on the page. To submit the game search, either click the "Search" button, or go ahead and hit the [ENTER] key.
+
+- Once you have submitted your search, results should be able to be seen on the left side of the page. If no results are visible, make sure that the game's name is spelled correctly. Otherwise, the game might not be included in the fetch's API.
+
+- Each game card should have a button attached to it, opening up more information about the selected game, including the cheapest ever price it has been sold for. If there are any active deals, they will show up below this extra game information. If no deals are visible, there are currently no sales going on for the selected game.
+
+![](readme-ss-2.png)
+
 ## API
 
 This application was created using the [CheapShark Deals API](https://apidocs.cheapshark.com/). As requested by the API creator, all redirects to specific deals are done so through CheapShark's specific redirect URL. Many thanks to CheapShark for creating such a helpful API!
