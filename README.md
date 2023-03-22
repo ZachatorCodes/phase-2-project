@@ -34,7 +34,7 @@ To see deals for a specific storefront, please click on the "Stores" tab of the 
 
 If you'd like to sort the stores by alphabetical order, you can do so by checking the "Sort Alphabetically" box at the top of the page.
 
-To see deals from a specific store, click the "See Dealss" button at the bottom of a specific store card.
+To see deals from a specific store, click the "See Deals" button at the bottom of a specific store card.
 
 When clicked, the 60 most popular deals for the selected marketplace will be shown on the right side of the screen. If there are no deals visible, it means that the selected store has no deals active.
 
