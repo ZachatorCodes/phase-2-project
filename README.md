@@ -46,6 +46,8 @@ To make sure that the Favorites page of the application works, you must fork and
 
 - In order to add a new game to the database, please fill out the form with your favorite game's name and image URL. Then, click the "Add Game" button.
 
+![](readme-ss-6.png)
+
 ## API
 
 This application was created using the [CheapShark Deals API](https://apidocs.cheapshark.com/). As requested by the API creator, all redirects to specific deals are done so through CheapShark's specific redirect URL. Many thanks to CheapShark for creating such a helpful API!
