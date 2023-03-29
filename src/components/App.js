@@ -43,9 +43,9 @@ The counter will continue to increment based on word length and will never reset
         <Route exact path="/favorites">
           <Favorites />
         </Route>
-        <Route exact path="/textcounter">
+        {/* <Route exact path="/textcounter">
           <TextCounter />
-        </Route>
+        </Route> */}
         <Route exact path="/">
           <Home />
         </Route>
