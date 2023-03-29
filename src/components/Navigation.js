@@ -36,6 +36,9 @@ function Navigation() {
       >
         Favorites
       </NavLink>
+      <NavLink exact to="/textcounter" className="linkStyles" activeClassName="activeLinkStyles" >
+        Text Counter
+      </NavLink>
     </div>
   );
 }
